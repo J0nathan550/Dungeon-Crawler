@@ -1,15 +1,14 @@
 package;
 
-import flixel.text.FlxText;
 import flixel.FlxState;
 
 class PlayState extends FlxState
 {
+
 	override public function create()
 	{
-		var text = new FlxText(10,10,100,"Hello World");
-		text.screenCenter();
-		add(text);
+		var player = new Player(20, 20);
+		add(player);
 		super.create();
 	}
 
