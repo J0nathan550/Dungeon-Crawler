@@ -104,8 +104,6 @@ class Player extends FlxSprite
 				animation.play("d_" + action);
 			case _:
 		}
-
-
 	}
 
 	override function update(elapsed:Float)
