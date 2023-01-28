@@ -1,12 +1,11 @@
 package;
-
 import flixel.FlxG;
 import flixel.util.FlxColor;
 import flixel.FlxSprite;
 
 class Player extends FlxSprite
 {
-	static inline var SPEED:Float = 100;
+	public static inline var SPEED:Float = 100;
 
 	private var up:Bool = false;
 	private var down:Bool = false;
@@ -19,8 +18,8 @@ class Player extends FlxSprite
 		loadGraphic(AssetPaths.player__png, true, 16, 16);
 		setFacingFlip(LEFT, false, false);
 		setFacingFlip(RIGHT, true, false);
-		setSize(8, 8);
-		offset.set(4, 8);
+		setSize(16, 16);
+		offset.set(4, 4);
 		animation.add("d_idle", [0]);
 		animation.add("lr_idle", [3]);
 		animation.add("u_idle", [6]);
